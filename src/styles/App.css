@@ -1,0 +1,59 @@
+.txColorPrincipal{
+    color: #4c1d95;
+}
+
+.txColorSecuandario{
+    color: #06b6d4;
+}
+
+.bgColorPrimario{
+    background-color: #4c1d95;
+}
+
+.bgColorSecundario{
+    background-color: #06b6d4;
+}
+
+.bordeColorPrimario{
+    border-color: #4c1d95;
+}
+
+.bordeColorSecundario{
+    border-color: #06b6d4;
+}
+
+
+.boton{
+    color: #4c1d95;
+    border-radius: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-inline: auto;
+    transition-property: background-color;
+    transition-duration: 0.3s;   
+}
+
+.boton:hover{
+    background-color: white;
+}
+
+.botonSesion, .botonEditarPerfil{
+    color: white;
+    border-radius: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-inline: auto;
+    transition-property: background-color;
+    transition-duration: 0.3s;   
+}
+
+.botonSesion:hover{
+    background-color: #7c3aed;
+    cursor: pointer;
+}
+
+.botonDirecciones {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-inline: auto;
+}

@@ -1,0 +1,150 @@
+.seccionCliente {
+    background-image: linear-gradient(to bottom, #4c1d95 50%, transparent 50%), url(../img/cliente_inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+    background-position: 100%, center 16rem;
+    margin-top: -2rem;
+}
+
+@media (min-width: 768px){
+    .seccionCliente{        
+        background-image: linear-gradient(to left, #4c1d95 50%, transparent 50%), url(../img/cliente_inicio.jpg);
+        background-size: 100%, 85%;
+        background-position: 100%, -7rem top;
+        margin-top: -2.5rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .seccionCliente{        
+        background-image: linear-gradient(to left, #4c1d95 50%, transparent 50%), url(../img/cliente_inicio.jpg);
+        background-size: 100%, 70%;
+        background-position: 100%, -6rem top;
+        margin-top: -2.5rem;
+    }
+}
+
+@media (min-width: 1280px){
+    .seccionCliente{        
+        background-image: linear-gradient(to left, #4c1d95 50%, transparent 50%), url(../img/cliente_inicio.jpg);
+        background-size: 100%, 51%;
+        background-position: 100%, left top;
+        margin-top: -2.5rem;
+    }
+}
+
+.galeriaBefore{
+    position: relative;
+}
+
+.galeriaBefore:hover{
+    cursor: pointer;
+}
+
+.galeriaBefore::before{
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
+    background-color: #4c1d95;
+    position: absolute;
+    content: "VER MÁS \1F603";
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+.galeriaBefore:hover::before{
+    opacity: .7;
+}
+
+.fullImgBG{
+    position: fixed;
+    top: 0;    
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.btnCerrar{
+    position: fixed;
+    cursor: pointer;
+    opacity: 0.8;
+    color: #06b6d4;
+    z-index: 9999;
+    top: 40px;
+    right: 40px;
+}
+
+.btnCerrar:hover{
+    opacity: 1;
+}
+
+.fullScreemImgGaleria{
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullScreemImgGaleria img{
+    max-width: 100%;
+    max-height: 100%;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.seccionDJ {
+    background-image: linear-gradient(to bottom, #4c1d95 50%, transparent 50%), url(../img/dj_inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%, 110%;
+    background-position: 100%, center 18rem;
+    margin-top: -2rem;
+}
+
+@media (min-width: 768px){
+    .seccionDJ{        
+        background-image: linear-gradient(to right, #4c1d95 50%, transparent 50%), url(../img/dj_inicio.jpg);
+        background-size: 100%, 92%;
+        background-position: 100%, 13rem top;
+        margin-top: -2.5rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .seccionDJ{        
+        background-image: linear-gradient(to right, #4c1d95 50%, transparent 50%), url(../img/dj_inicio.jpg);
+        background-size: 100%, 70%;
+        background-position: 100%, 26rem top;
+        margin-top: -2.5rem;
+    }
+}
+
+@media (min-width: 1280px){
+    .seccionDJ{        
+        background-image: linear-gradient(to right, #4c1d95 50%, transparent 50%), url(../img/dj_inicio.jpg);
+        background-size: 100%, 51%;
+        background-position: 100%, right top;
+        margin-top: -2.5rem;
+    }
+}
+
+
+  

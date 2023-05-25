@@ -1,0 +1,81 @@
+/*Background Sesiones*/
+.bgSesiones{
+    height: 100vh;
+    position: relative;
+    display: block;    
+    background-image: url('../img/bg_Users.jpg');
+    background-repeat: no-repeat;
+    background-position: center 4rem;
+    background-size: 310%;
+}
+
+.bgSesiones::before{
+    content: '';
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(76, 29, 149, 0.6) 0%, rgba(76, 29, 149, 0.2) 100% );
+    position: absolute;
+}
+
+@media (min-width: 768px){
+    .bgSesiones{
+        background-size: 190%;
+    }
+}
+
+@media (min-width: 1024px){
+    .bgSesiones{
+        background-size: 130%;
+    }
+}
+
+@media (min-width: 1280px){
+    .bgSesiones{
+        background-size: 105%;
+    }
+}
+
+/*Checkbox*/
+.mostrarContrasena{
+    font-size: 1.15rem;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+    margin: 0.7rem 0 0 0.5rem;
+    color: #4c1d95;
+    font-weight: bold;
+}
+
+.mostrarContrasena input[type="checkbox"]{
+    appearance: none;
+    background-color: white;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid #4c1d95;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+
+.mostrarContrasena input[type="checkbox"]::before{
+    content: '';
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in;
+    box-shadow: inset 1em 1em #4c1d95;    
+    background-color: CanvasText;
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.mostrarContrasena input[type="checkbox"]:checked::before{
+    transform: scale(1);
+}
